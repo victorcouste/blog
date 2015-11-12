@@ -1,3 +1,7 @@
-= Bienvenue
+= Bonjour
 
-Bienvenu! Welcome!
+
+Bienvenue! Welcome!
+
+
+A blog about Apache Cassandra, DataStax and the rest of the world.
