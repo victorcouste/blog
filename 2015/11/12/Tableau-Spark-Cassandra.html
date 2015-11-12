@@ -23,7 +23,7 @@
     <meta property="og:description" content="Here is a simple tutorial if you need to do a simple and quick demo on how to use Tableau Software to create dashboards on Cassandra data. The demonstration will go through Spark ODBC driver and so it will demonstrate..." />
     <meta property="og:url" content="https://victorcouste.github.io/blog/2015/11/12/Tableau-Spark-Cassandra.html" />
     <meta property="article:published_time" content="2015-11-11T23:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-11-12T16:25:39.970Z" />
+    <meta property="article:modified_time" content="2015-11-12T23:00:54.579Z" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Tableau + Spark + Cassandra" />
@@ -45,7 +45,7 @@
     "headline": "Tableau + Spark + Cassandra",
     "url": "https://victorcouste.github.io/blog/2015/11/12/Tableau-Spark-Cassandra.html",
     "datePublished": "2015-11-11T23:00:00.000Z",
-    "dateModified": "2015-11-12T16:25:39.970Z",
+    "dateModified": "2015-11-12T23:00:54.579Z",
     "description": "Here is a simple tutorial if you need to do a simple and quick demo on how to use Tableau Software to create dashboards on Cassandra data. The demonstration will go through Spark ODBC driver and so it will demonstrate..."
 }
     </script>
@@ -101,8 +101,19 @@ Step-by-step guide</p>
 <div class="paragraph">
 <p>6/ Then you should be able to see all Cassandra keyspaces (Schema in Tableau) and tables
 Drag and drop albums and performers tables.
-Change the inner join clause with right columns from the 2 tables, Performer from albums table and Name from performers.
-! Keep a "Live" connection. Don&#8217;t use "Extract" because all your data will be loaded into Tableau.</p>
+Change the inner join clause with right columns from the 2 tables, Performer from albums table and Name from performers.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Keep a "Live" connection. Don&#8217;t use "Extract" because all your data will be loaded into Tableau.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>"Update Now" to see a sample of data returned.</p>
