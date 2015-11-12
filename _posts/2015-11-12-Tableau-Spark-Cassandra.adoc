@@ -1,3 +1,43 @@
-= Titre2
+= Tableau + Spark + Cassandra
 
-dsdsds
+
+Here is a simple tutorial if you need to do a simple and quick demo on how to use Tableau Software to create dashboards on Cassandra data. The demonstration will go through Spark ODBC driver and so it will demonstrate also our Apache Spark integration.
+This tutorial will explain all installations and setups ; and will provide data to create such demo step by step.
+Step-by-step guide
+ 
+1/ Start a DSE Cassandra node with Spark enable "dse cassandra -k"
+
+2/ Start the Spark Thrift JDBC/ODBC server http://docs.datastax.com/en/datastax_enterprise/4.8/datastax_enterprise/spark/sparkSqlThriftServer.html with the command "dse start-spark-sql-thriftserver". You should see a new SparkCQL application running here http://192.168.1.22:4040/  in Spark UI http://127.0.0.1:7080/
+
+3/ Create the 3 demo tables, you can find here all data and the script to create CQL schemas and load tables https://drive.google.com/drive/u/1/folders/0BwpBQmtj50DFaU5jWTJtM1pleUU
+
+4/ Get and install the Databricks ODBC driver for Spark found here https://databricks.com/spark/odbc-driver-download or here https://academy.datastax.com/downloads/download-drivers
+
+5/ Open Tableau and connect to the Spark server
+ 
+
+6/ Then you should be able to see all Cassandra keyspaces (Schema in Tableau) and tables
+Drag and drop albums and performers tables.
+Change the inner join clause with right columns from the 2 tables, Performer from albums table and Name from performers.
+Keep a Live connection.
+
+"Update Now" to see a sample of data returned.
+
+7/ Go to the Tableau "Sheet 1" and begin a simple dashboard.
+Convert Year column (from albums table) to Discrete type (click at the right of the Year column to do that from a menu).
+Add Year (from albums table) as Rows, Gender (from performers table) as Columns and Number of Records as the measure.
+
+Finally with "Show Me" option, convert your table into a stacked bars chart.
+
+8/ Finally you can check SQL queries generated on the fly by Tableau and pass to SparkSQL from Spark UI http://192.168.1.22:4040/sql/  (SQL tab of the SparkSQL UI).
+This will show SparkSQL usage and SQL queries executed on top of Cassandra data through the Cassandra/Spark connector.
+
+Related articles
+Tableau and SparkSQL http://www.tableau.com/fr-fr/about/blog/2014/10/tableau-spark-sql-big-data-just-got-even-more-supercharged-33799
+Apache Spark Drivers for ODBC and JDBC with SQL Connector http://www.simba.com/connectors/apache-spark-driver
+ 
+ 
+Page:
+How to create a Tableau Software demo with Spark driver ?
+Page:
+Spark Streaming with Cassandra - Using the Spark-Cassandra-Connector and Twitter Stream
