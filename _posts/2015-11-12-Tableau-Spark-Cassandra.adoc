@@ -7,11 +7,11 @@ Step-by-step guide
  
 1/ Start a DSE Cassandra node with Spark enable "dse cassandra -k"
 
-2/ Start the Spark Thrift JDBC/ODBC server http://docs.datastax.com/en/datastax_enterprise/4.8/datastax_enterprise/spark/sparkSqlThriftServer.html with the command "dse start-spark-sql-thriftserver". You should see a new SparkCQL application running here http://192.168.1.22:4040/  in Spark UI http://127.0.0.1:7080/
+2/ Start the Spark Thrift JDBC/ODBC server http://docs.datastax.com/en/datastax_enterprise/4.8/datastax_enterprise/spark/sparkSqlThriftServer.html with the command "dse start-spark-sql-thriftserver". You should see a new SparkCQL application running here http://127.0.0.1:4040/  in Spark UI http://127.0.0.1:7080/
 
 3/ Create the 3 demo tables, you can find here all data and the script to create CQL schemas and load tables https://drive.google.com/drive/u/1/folders/0BwpBQmtj50DFaU5jWTJtM1pleUU
 
-4/ Get and install the Databricks ODBC driver for Spark found here https://databricks.com/spark/odbc-driver-download or here https://academy.datastax.com/downloads/download-drivers
+4/ Get and install the Databricks ODBC driver for S127ere https://databricks.com/spark/odbc-driver-download or here https://academy.datastax.com/downloads/download-drivers
 
 5/ Open Tableau and connect to the Spark server
  
@@ -19,7 +19,7 @@ Step-by-step guide
 6/ Then you should be able to see all Cassandra keyspaces (Schema in Tableau) and tables
 Drag and drop albums and performers tables.
 Change the inner join clause with right columns from the 2 tables, Performer from albums table and Name from performers.
-Keep a Live connection.
+! Keep a "Live" connection. Don't use "Extract" because all your data will be loaded into Tableau.
 
 "Update Now" to see a sample of data returned.
 
