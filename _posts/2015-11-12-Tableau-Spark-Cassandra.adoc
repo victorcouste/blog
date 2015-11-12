@@ -19,7 +19,8 @@ Step-by-step guide
 6/ Then you should be able to see all Cassandra keyspaces (Schema in Tableau) and tables
 Drag and drop albums and performers tables.
 Change the inner join clause with right columns from the 2 tables, Performer from albums table and Name from performers.
-! Keep a "Live" connection. Don't use "Extract" because all your data will be loaded into Tableau.
+
+WARNING: Keep a "Live" connection. Don't use "Extract" because all your data will be loaded into Tableau.
 
 "Update Now" to see a sample of data returned.
 
