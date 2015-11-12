@@ -22,6 +22,15 @@ Change the inner join clause with right columns from the 2 tables, Performer fro
 
 WARNING: Keep a "Live" connection. Don't use "Extract" because all your data will be loaded into Tableau.
 
+NOTE: Keep a "Live" connection. Don't use "Extract" because all your data will be loaded into Tableau.
+
+IMPORTANT: Keep a "Live" connection. Don't use "Extract" because all your data will be loaded into Tableau.
+
+TIP: Keep a "Live" connection. Don't use "Extract" because all your data will be loaded into Tableau.
+
+CAUTION: Keep a "Live" connection. Don't use "Extract" because all your data will be loaded into Tableau.
+
+
 "Update Now" to see a sample of data returned.
 
 7/ Go to the Tableau "Sheet 1" and begin a simple dashboard.
